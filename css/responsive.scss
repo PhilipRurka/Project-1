@@ -1,0 +1,87 @@
+/************************************************************************************************************************
+************************************************************************************************************************/
+/*   3     #    */
+
+
+@media screen and (max-width: 768px) {
+	body {
+
+		section {
+			background-size: 210px;
+			height: 180px;
+			margin-bottom: 54%;
+
+			h1 {
+				font-size: 47px;
+				padding-top: 204px;
+			}
+		}
+
+		footer {
+			font-size: 29px;
+		}
+	}
+}
+
+@media screen and (max-width: 414px) {
+
+	body {
+
+		section {
+			margin-bottom: 85%;
+		    background-size: 143px;
+   			height: 123px;
+
+   			h1 {
+   				font-size: 33px;
+    			padding-top: 135px;
+   			}
+		}
+
+		nav {
+			margin: 9px 0 0 24px;
+
+			a {
+				background-size: 32px 33px;
+    			padding-left: 35px;
+    			font-size: 30px;
+			}
+		}
+		footer {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	body {
+
+	section {
+		margin-bottom: 70%;
+		}
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	body {
+
+	section {
+		margin-bottom: 46%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

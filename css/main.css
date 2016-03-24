@@ -33,14 +33,15 @@ body {
     background-position: 50% 0;
     width: 100%;
     text-align: center;
-    top: 40%;
+    top: 30%;
     position: absolute; }
     body section h1 {
       font-weight: 100;
       font-size: 38px;
       color: #fff;
       padding-top: 170px;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
   body footer {
     color: #fff;
     font-size: 25px;

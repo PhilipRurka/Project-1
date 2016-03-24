@@ -5,18 +5,23 @@
 
 @import "_little.scss";
 
+html ,body {
+	height: 100%;
+}
+
 .container {
-		background-image: url("../img/background-image.jpeg");
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		z-index: -1;
-		background-size: cover;
-		background-position: 100% 0;
-		text-shadow: 0px 0.5px #555;
-		letter-spacing: -1px;
-		// I put this here because it'll be applied to the whole body and everything in it.
-		// No need to put it on each element :)
-		-webkit-font-smoothing: antialiased;
+	height: 100%;
+	background-image: url("../img/background-image.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: -1;
+	background-size: cover;
+	background-position: 100% 0;
+	text-shadow: 0px 0.5px #555;
+	letter-spacing: -1px;
+	// I put this here because it'll be applied to the whole body and everything in it.
+	// No need to put it on each element :)
+	-webkit-font-smoothing: antialiased;
 
 	nav {
 
@@ -76,7 +81,11 @@
 
 
 
-
+.js {
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+}
 
 
 

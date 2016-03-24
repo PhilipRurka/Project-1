@@ -4,12 +4,12 @@
 
 
 @media screen and (max-width: 768px) {
-	body {
+	.container {
 
 		section {
 			background-size: 210px;
 			height: 180px;
-			
+
 			h1 {
 				font-size: 47px;
 				padding-top: 204px;
@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 414px) {
 
-	body {
+	.container {
 
 		section {
 		    background-size: 143px;

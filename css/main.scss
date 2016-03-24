@@ -16,7 +16,7 @@ body {
 		letter-spacing: -1px;
 		// I put this here because it'll be applied to the whole body and everything in it.
 		// No need to put it on each element :)
-		-webkit-font-smoothing: antialiased; 
+		-webkit-font-smoothing: antialiased;
 
 	nav {
 
@@ -32,10 +32,7 @@ body {
     		font-size: 40px;
 			color: #fff;
 			text-decoration: none;
-			// this is to make all the text "UPPERCASE". Because screenreaders will sometimes read all uppercase words like
-			// "M" "E" "N" "U" (actually spelling it out instead of saying "Menu"). Delete this after you read it. 
 			text-transform: uppercase;
-			//
 			}
 		}
 		
@@ -45,7 +42,10 @@ body {
 		background-repeat: no-repeat;
 		background-size: 169px;
 		background-position: 50% 0;
-		margin: 40% 0 55%;
+		width: 100%;
+		text-align: center;
+		top: 40%;
+		position: absolute; 
 
 		h1 {
 			font-weight: 100;
@@ -59,14 +59,11 @@ body {
 	footer {
 		color: #fff;
 		font-size: 25px;
-		// display: inline-block; (position:absolute makes "display" stuff irrelevant, so we can take it off)
-		font-weight: 100;
 		text-align: center;
 		width: 100%;
-		// This is to make it "stick" to the bottom.
+
 		position: absolute;
-		bottom: 1em;
-		//
+		bottom: 26px;
 	}
 }
 

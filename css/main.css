@@ -10,7 +10,8 @@ body {
   background-size: cover;
   background-position: 100% 0;
   text-shadow: 0px 0.5px #555;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased; }
   body nav {
     display: inline-block;
     margin: 14px 0 0 32px; }
@@ -22,28 +23,30 @@ body {
       padding-left: 49px;
       font-size: 40px;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: uppercase; }
   body section {
     background-image: url("../img/logo.svg");
     height: 145px;
     background-repeat: no-repeat;
     background-size: 169px;
     background-position: 50% 0;
-    margin: 40% 0 55%; }
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    position: absolute; }
     body section h1 {
       font-weight: 100;
       font-size: 38px;
       color: #fff;
       padding-top: 170px;
-      text-align: center;
-      -webkit-font-smoothing: antialiased; }
+      text-align: center; }
   body footer {
     color: #fff;
     font-size: 25px;
-    display: inline-block;
-    font-weight: 100;
-    -webkit-font-smoothing: antialiased;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    position: absolute;
+    bottom: 26px; }
 
 /*# sourceMappingURL=main.css.map */

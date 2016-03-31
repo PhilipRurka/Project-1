@@ -1,43 +1,22 @@
 console.log("Program Begin");
 
-var ac_name = prompt('What is my name?');
-var pr_name = prompt('What is my prefered name?');
-var place = prompt('Local favourite place?');
-var fav_number = prompt('What is my favourite number?');
-var age = prompt('What is my age?');
-var score = 0;
+var guess;
+var min = parseInt(prompt('Give me a minimum number.'));
+var max = parseInt(prompt('Give me a maximum number.'));
+var ran_number = ran_number_fun(max,min);
+var attempt = 0;
 
-if (ac_name.toUpperCase() === 'PHILIP') {
-	score += + 1;
-}
-
-if (pr_name.toUpperCase() === 'DEF') {
-	score += + 1;
+function ran_number_fun(max,min) {
+	return Math.floor(Math.random() * (1 + max - min)) + min;
 }
 
-if (place.toUpperCase() === 'TEMPLE OF TIME') {
-	score += + 1;
-}
-if (fav_number === '23') {
-	score += + 1;
-}
-if (age === '28') {
-	score += + 1;
+while (guess !== ran_number) {
+	guess = ran_number_fun(max,min);
+	attempt += 1;
 }
 
-if (score === 5) {
-	alert('You know me very well! You got them all right!');
-} else if (score === 4) {
-	alert('You know me pretty well. You got all but one right.');
-} else if (score === 3) {
-	alert('You don\'t seem to know me very well. You got 3 right.');
-} else if ( score === 2) {
-	alert('Do you even know me? You got 2 out of 5 right.')
-} else if (score === 1) {
-	alert('Do I even know you? You got 1 out of 5 right! Come on!');
-} else {
-	alert('... you suck.');
-}
+document.write('<p>The randome number from ' + min + '-' + max + ' was ' + ran_number + '.</p>');
+document.write('<p>It took the computer ' + attempt + ' attemps to get it right.</p>');
 
 
 console.log("Program Complete");

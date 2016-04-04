@@ -14,7 +14,7 @@ while (guess !== ran_number) {
 	guess = ran_number_fun(max,min);
 	attempt += 1;
 }
- 
+
 document.write('<p>The randome number from ' + min + '-' + max + ' was ' + ran_number + '.</p>');
 document.write('<p>It took the computer ' + attempt + ' attemps to get it right.</p>');
 

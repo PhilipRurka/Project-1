@@ -1,0 +1,22 @@
+/***********************************************************
+                       Home Page
+************************************************************/
+/*   3     #    */
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.test header {
+  text-align: center;
+  margin-top: 60px; }
+.test .js {
+  font-size: 60px;
+  margin: 0; }
+.test section {
+  margin: 0 20%; }
+.test p {
+  font-size: 40px;
+  margin: 0;
+  display: inline; }
+
+/*# sourceMappingURL=main.css.map */

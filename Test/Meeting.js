@@ -9,12 +9,28 @@ var wrong_list = [];
 var wrong;
 
 var questions = [
-['What is my favourite number?', 23],
-['Number one event I want to attend?', 'burning man'],
-['What is my favourite food?','sushi'],
-['What is my favourtite language?', 'math'],
-['Coke or Pepsi?', 'neither']
+	{
+		question : 'What is my favourite number?',
+		answer : 23
+	},
+	{
+		question : 'Number one event I want to attend?',
+		answer : 'burning man'
+	},
+	{
+		question : 'What is my favourite food?',
+		answer : 'sushi'
+	},
+	{
+		question : 'What is my favourtite language?',
+		answer : 'math'
+	},
+	{
+		question : 'Coke or Pepsi?',
+		answer : 'neither'
+	}
 ];
+
 
 function red_black_1() {
 	if ( document.getElementById("first").style.color == "red" ) {
@@ -37,8 +53,8 @@ function red_black_1() {
 
 function questions_func() {
 	for (var i = 0; i < questions.length; i += 1) {
-		question = questions [i][0];
-		answer = questions [i][1];
+		question = questions [i].question;
+		answer = questions [i].answer;
 		response = prompt(question);
 		if (response.toLowerCase() === answer || parseInt(response) === answer){
 			correct_ans += 1;

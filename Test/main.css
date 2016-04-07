@@ -21,5 +21,10 @@ html, body {
 .test a {
   font-size: 50px;
   margin-left: 20%; }
+.test #output p {
+  display: block;
+  font-size: 40px; }
+.test #output h2 {
+  font-size: 50px; }
 
 /*# sourceMappingURL=main.css.map */

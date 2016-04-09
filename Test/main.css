@@ -66,6 +66,8 @@ img {
   background: #3acec2;
   text-align: center;
   padding: 40px 0; }
+  .banner h1 {
+    margin: 0; }
 
 .main-footer {
   background: #d9e4ea;

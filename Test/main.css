@@ -69,6 +69,27 @@ img {
   .banner h1 {
     margin: 0; }
 
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+  z-index: -1; }
+  figure .icon_location {
+    width: 35px;
+    position: absolute;
+    top: -15px;
+    right: -15px; }
+  figure figcaption {
+    font-size: .9em;
+    line-height: 1.5;
+    color: #fff;
+    padding: 1em;
+    background: rgba(19, 43, 102, 0.85);
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0; }
+
 .main-footer {
   background: #d9e4ea;
   padding: 2em 0;
@@ -90,9 +111,18 @@ footer {
   Media Queries
 ==================================== */
 @media (min-width: 769px) {
+  body {
+    padding-top: 84px; }
+
   .main-header {
-    width: 90%;
-    margin: 0 auto; }
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    height: 84px;
+    padding: 0 5%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); }
     .main-header h1 {
       display: inline-block;
       float: left;

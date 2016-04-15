@@ -7,7 +7,7 @@
     height: 180px; }
     .container section h1 {
       font-size: 47px;
-      padding-top: 172px; }
+      padding-top: 16px; }
   .container footer {
     font-size: 29px; } }
 @media screen and (max-width: 414px) {
@@ -19,7 +19,7 @@
       padding-top: 135px; }
   .container nav {
     margin: 9px 0 0 24px; }
-    .container nav a {
+    .container nav p {
       background-size: 32px 33px;
       padding-left: 35px;
       font-size: 30px; }

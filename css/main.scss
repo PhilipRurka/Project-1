@@ -27,9 +27,9 @@ html ,body {
 
 		display: inline-block;
 		margin: 14px 0 0 32px;
+		position: absolute;
 
-		a {
-			background-image: url("../img/icon-menu.svg");
+		p {
 			display: inline-block;
 			background-repeat: no-repeat;
 			background-size: 44px 44px;
@@ -38,9 +38,32 @@ html ,body {
 			color: #fff;
 			text-decoration: none;
 			text-transform: uppercase;
+			margin: 0;
 			}
+
+		.menu_logo {
+			background-image: url("../img/icon-menu.svg");
+			}
+
+
+		.big_x {
+			background-image: url('../img/icon-close.svg');
+			background-size: 35px;
+		    position: absolute;
+		    background-position: 0 50%;
+		    font-size: 0px;
+		    height: 40px;
+		    padding-left: 34px;
+			}
+
+
+		p:hover {
+			cursor:se-resize
 		}
-		
+
+	}
+}		
+
 	section {
 		background-image: url("../img/logo.svg");
 		height: 145px;
@@ -72,10 +95,12 @@ html ,body {
 		position: absolute;
 		bottom: 26px;
 	}
+
+
+
+.menu_body {
+	background-color: rgba(0,0,0,0.5);
 }
-
-
-
 
 
 
@@ -92,8 +117,14 @@ html ,body {
 
 
 
-
-
+.BG {
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	position: absolute;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
 
 
 

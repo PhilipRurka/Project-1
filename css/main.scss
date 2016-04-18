@@ -136,9 +136,58 @@ html ,body {
 	content: "";
 	position: absolute;
 	top:0; right:0; bottom:0; left: 0;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.8);
 	z-index:1;
 	display: none;
+
+	ul {
+		list-style: none;
+		position: absolute;
+		top: 114px;
+		left: 33px;
+	}
+
+	li:not(:first-child) {
+		margin-top: 36px;
+	}
+
+	li:nth-child(1) a {
+		background-image: url('../img/icon-lab.svg');
+		background-size: 31px;
+		background-position: 2px -1px;
+		padding-left: 63px;
+	}
+
+	li:nth-child(2) a {
+		background-image: url('../img/icon-gallery.svg');
+		background-size: 44px;
+		background-position: 0 50%;
+		padding-left: 67px;
+		margin-left: -4px;
+	}
+
+	li:nth-child(3) a {
+		background-image: url('../img/icon-eco.svg');
+		background-size: 32px;
+		background-position: 2px -1px;
+		padding-left: 63px;
+	}
+
+	li:nth-child(4) a {
+		background-image: url('../img/icon-contact.svg');
+		background-size: 42px;
+		background-position: 0 6px;
+		padding-left: 66px;
+		margin-left: -3px;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 34px;
+		color: #fff;
+		background-repeat: no-repeat;
+		font-weight: lighter;
+	}
 }
 
 div #menu {

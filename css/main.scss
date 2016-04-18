@@ -29,7 +29,7 @@ html ,body {
 		margin: 14px 0 0 32px;
 		position: absolute;
 
-		p {
+		a {
 			display: inline-block;
 			background-repeat: no-repeat;
 			background-size: 44px 44px;
@@ -57,7 +57,7 @@ html ,body {
 			}
 
 
-		p:hover {
+		a:hover {
 			cursor:se-resize
 		}
 
@@ -98,10 +98,11 @@ html ,body {
 
 
 
-.menu_body {
-	background-color: rgba(0,0,0,0.5);
-}
 
+// #wrapper {
+// 	background-color: #000;
+// 	height: 100%;
+// }
 
 
 
@@ -114,17 +115,45 @@ html ,body {
 }
 
 
+// .menu_click:not(#nav) {
+// 	opacity: 0.3;
+// } 
+
+
+// .BG {
+// 	background-color: #000;
+// 	z-index: 1;
+// 	position: absolute;
+// 	background-size: cover;
+// 	width: 100%;
+// 	height: 100%;
+// }
 
 
 
-.BG {
-	background-color: rgba(0,0,0,0.5);
-	z-index: 1;
+
+#overlay {
+	content: "";
 	position: absolute;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
+	top:0; right:0; bottom:0; left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index:1;
+	display: none;
 }
+
+div #menu {
+	position:relative;
+	z-index:2;
+}
+ // greater than the background, so it comes on top of the background 
+
+
+
+
+
+
+
+
 
 
 

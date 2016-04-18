@@ -32,6 +32,8 @@ html, body {
       margin: 0; }
     .container nav .menu_logo {
       background-image: url("../img/icon-menu.svg"); }
+    .container nav .menu_logo:hover {
+      cursor: se-resize; }
     .container nav .big_x {
       background-image: url("../img/icon-close.svg");
       background-size: 35px;
@@ -40,8 +42,8 @@ html, body {
       font-size: 0px;
       height: 40px;
       padding-left: 34px; }
-    .container nav a:hover {
-      cursor: se-resize; }
+    .container nav .big_x:hover {
+      cursor: nw-resize; }
 
 section {
   background-image: url("../img/logo.svg");
@@ -75,6 +77,10 @@ footer {
   margin-top: 100px;
   font-size: 40px; }
 
+/***********************************************************
+                       Overlay
+************************************************************/
+/*   3     #    */
 #overlay {
   content: "";
   position: absolute;

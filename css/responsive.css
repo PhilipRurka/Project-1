@@ -16,9 +16,16 @@
     height: 123px; }
     .container section h1 {
       font-size: 30px; }
-  .container nav {
-    margin: 9px 0 0 24px; }
-    .container nav p {
+  .container nav,
+  .container #nav {
+    margin: 14px 0 0 24px; }
+    .container nav a,
+    .container #nav a {
+      background-size: 35px 36px;
+      padding-left: 43px;
+      font-size: 33px; }
+    .container nav p,
+    .container #nav p {
       background-size: 32px 33px;
       padding-left: 35px;
       font-size: 30px; }

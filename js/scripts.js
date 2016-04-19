@@ -2,7 +2,7 @@ var $overlay = $('<div id="overlay"><ul><li><a href="lab.html">Lab</a></li><li><
 var swich = 0;
 
 $('body').append($overlay);
-
+$('#overlay').hide();
 
 $('#menu').click(function(event) {
 	event.preventDefault();

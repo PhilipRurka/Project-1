@@ -7,6 +7,7 @@
 
 html ,body {
 	height: 100%;
+	position: relative;
 }
 
 .container {
@@ -23,7 +24,7 @@ html ,body {
 	// No need to put it on each element :)
 	-webkit-font-smoothing: antialiased;
 
-	nav {
+	#nav {
 
 		display: inline-block;
 		margin: 14px 0 0 32px;
@@ -118,7 +119,7 @@ html ,body {
 
 
 /***********************************************************
-                       Overlay
+                       Overlay and menu_index
 ************************************************************/
 /*   3     #    */
 
@@ -129,12 +130,25 @@ html ,body {
 	top:0; right:0; bottom:0; left: 0;
 	background-color: rgba(0, 0, 0, 0.8);
 	z-index:1;
-	display: none;
+}
+
+#overlay{
+	ul {
+		top: 114px;
+	}
+}
+#menu_nav {
+	ul {
+		top: 19px;
+	}
+}
+
+#overlay,
+#menu_nav {
 
 	ul {
 		list-style: none;
 		position: absolute;
-		top: 114px;
 		left: 33px;
 	}
 
@@ -185,6 +199,38 @@ div #menu {
 	position:relative;
 	z-index:2;
 }
+
+
+/***********************************************************
+            menu-index.html      With no .js
+************************************************************/
+/*   3     #    */
+
+
+.after:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	opacity:0.8;
+	z-index:1;
+}
+
+div #menu_nav {
+	position:relative;
+	z-index:2;
+}
+
+
+
+
+
+
+
+
 
 
 

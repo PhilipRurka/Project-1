@@ -1,6 +1,13 @@
-var $overlay = $('<div id="overlay"><ul><li><a href="lab.html">Lab</a></li><li><a href="home_gallery.html">Home Gallery</a></li><li><a href="eco.html">Eco</a></li><li><a href="contact.html">Contact</a></li></ul></div>')
+var $overlay = $('<div id="overlay"></div>');
+var $ul = $('<ul></ul>')
+var $lab = $('<li><a href="lab.html">Lab</a></li>');
+var $gallery = $('<li><a href="home_gallery.html">Home Gallery</a></li>');
+var $eco = $('<li><a href="eco.html">Eco</a></li>');
+var $contact = $('<li><a href="contact.html">Contact</a></li>');
 var swich = 0;
 
+$overlay.append($ul);
+$ul.append($lab).append($gallery).append($eco).append($contact);
 $('body').append($overlay);
 $('#overlay').hide();
 

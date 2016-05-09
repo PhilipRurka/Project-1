@@ -1,0 +1,74 @@
+/***********************************************************
+                        	Mixin
+************************************************************/
+/*   3     #    */
+
+@mixin menu_icon($icon, $size, $position, $pad_left, $mar-left :null) {
+	background-image: url('../img/#{$icon}.svg');
+	background-size: $size;
+	background-position: $position;
+	padding-left: $pad_left;
+	margin-left: $mar_left;
+}
+
+@mixin text($size, $line_height :null, $weight: null, $color: null, $text_align: null) {
+	font-size: $size;
+	line-height: $line-height;
+	font-weight: $weight;
+	color: $color;
+	text-align: $text-align;
+}
+
+
+/***********************************************************
+                      Place Holders
+************************************************************/
+/*   3     #    */
+
+
+
+
+
+/***********************************************************
+                      	  Colors
+************************************************************/
+/*   3     #    */
+
+
+$emperor						: #555;
+$white   						: #fff;
+$black							: #000;
+
+
+/***********************************
+           Colors-Function
+************************************/
+/*   3     #    */
+
+$color_container_t_shadow				: $emperor;
+$color_nav_anchor						: $white;
+$color_build_h1							: $white;
+$color_footer 							: $white;
+$color_overlay							: $black;
+$color_overlay_a						: $white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

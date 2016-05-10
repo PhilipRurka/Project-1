@@ -11,12 +11,28 @@
 	margin-left: $mar_left;
 }
 
-@mixin text($size, $line_height :null, $weight: null, $color: null, $text_align: null) {
+@mixin text($size, $line_height :null, $weight :null, $color :null, $text_align :null) {
 	font-size: $size;
 	line-height: $line-height;
 	font-weight: $weight;
 	color: $color;
 	text-align: $text-align;
+}
+
+@mixin menu_icon_and_anchor($p_left, $back_size, $icon, $height :null, $back-pos :null, $pos :null) {
+	margin: 0;
+	outline: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	display: inline-block;
+
+	padding-left: $p_left;
+	background-image: url('../img/#{$icon}.svg');
+	height: $height;
+	background-size: $back_size;
+	background-position: $back-pos;
+	position: $pos;
 }
 
 
@@ -62,6 +78,7 @@ $color_overlay_a						: $white;
 
 
 
+  
 
 
 
